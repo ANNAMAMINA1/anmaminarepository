@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stil'rich</title>
+    <link rel="stylesheet" href="stilrich_main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Preloader--><!--Preloader--><!--Preloader-->
+    <div id="preloader">
+      <img
+        src="https://github.com/GaterSt1/KFC_1/blob/main/preloader.gif?raw=true"
+        alt=""
+      />
+    </div>
+
+    <script>
+      window.onload = function () {
+        let preloader = document.getElementById("preloader");
+        preloader.classList.add("hide-preloader");
+        setInterval(function () {
+          preloader.classList.add("preloader-hidden");
+        }, 990);
+      };
+    </script>
+    <!--Preloader--><!--Preloader--><!--Preloader-->
+
+    <!--Header--><!--Header--><!--Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <div class="logo_container">
+            <a href="#"
+              ><img
+                class="logo"
+                src="https://github.com/GaterSt1/KFC_1/blob/main/stilrich_logo.png?raw=true"
+                alt=""
+            /></a>
+
+            <h1 class="logo_name">stil'rich</h1>
+          </div>
+          <nav class="nav">
+            <a class="nav__link" href="#">Directory</a>
+            <a class="nav__link" href="#">Discounts</a>
+            <a class="nav__link" href="#">Delivery</a>
+            <a class="nav__link" href="#">News</a>
+          </nav>
+
+          <div class="search_container">
+            <input type="text" class="search" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Header--><!--Header--><!--Header--><!--Header--><!--Header--><!--Header-->
+
+    <!--Main--><!--Main--><!--Main-->
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img
+          src="https://images.wallpaperscraft.ru/image/single/para_zvezdnoe_nebo_art_123338_1920x1080.jpg"
+          style="width: 100%"
+        />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://cs14.pikabu.ru/post_img/big/2023/01/22/7/167438532119863831.png"
+          style="width: 100%"
+        />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="data:image/jpeg;base64,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"
+          style="width: 100%"
+        />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <!--Main--><!--Main--><!--Main-->
+
+    <!--Footer--><!--Footer--><!--Footer-->
+
+    <!--Footer--><!--Footer--><!--Footer-->
+  </body>
+</html>
